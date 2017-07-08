@@ -12,7 +12,8 @@ let db;
 
 MongoClient.connect('mongodb://localhost/juniordevjobsdb', function(err, dbConnection) {
   db = dbConnection;
-  let server = app.listen(3000, function() {
+  let port2 = process.env.PORT || 3000;
+  let server = app.listen(port2, function() {
 	  let port = server.address().port;
 	  console.log("Started server on port", port);
   });
