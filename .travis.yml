@@ -1,9 +1,11 @@
 language: node_js
-node_js: 
+node_js:
   - "node"
 cache:
   directories:
     - "node_modules"
-script:
+install: true
+script: 
   - ./build/linux/build.sh
   - ./build/linux/test.sh
+
