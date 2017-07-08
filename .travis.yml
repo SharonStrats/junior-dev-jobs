@@ -6,3 +6,4 @@ cache:
     - "node_modules"
 script:
   - ./build/linux/build.sh
+  - ./build/linux/test.sh
