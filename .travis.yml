@@ -10,6 +10,7 @@ script:
   - ./build/linux/test.sh
 deploy:
   provider: heroku
+  skip_cleanup: true
   app: sharon-jd-jobs
   api_key: "cfee5907-4e02-41a8-8424-8e612c0d771d"
   on:
