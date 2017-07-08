@@ -9,6 +9,11 @@ script:
   - ./build/linux/build.sh
   - ./build/linux/test.sh
 deploy:
-  provider: "heroku"
-    api_key: "cfee5907-4e02-41a8-8424-8e612c0d771d"
-    app: "sharon-jd-jobs"
+  provider: 
+    - "heroku"
+    app: 
+    - "sharon-jd-jobs"
+    api_key: 
+      - "cfee5907-4e02-41a8-8424-8e612c0d771d"
+  on:
+    all_branches: true
